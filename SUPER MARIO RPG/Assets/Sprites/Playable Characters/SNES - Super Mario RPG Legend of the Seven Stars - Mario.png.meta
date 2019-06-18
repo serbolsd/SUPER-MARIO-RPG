@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 2bf2a13bd4313564c85b6104b351107f
+guid: 91a94145c37e6974bb927b64f41ad7f4
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_0
+    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Mario_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -32,7 +32,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -85,21 +85,21 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_0
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_0
       rect:
         serializedVersion: 2
-        x: 424
-        y: 1562
-        width: 583
-        height: 414
+        x: 152
+        y: 375
+        width: 25
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61e663e7494b22c4c924661dd273008b
+      spriteID: c399f6cf48326a648a3372fce86d4c78
       vertices: []
       indices: 
       edges: []
@@ -107,7 +107,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 069dcecfe5663054badf33fd1268ce5c
+    spriteID: e931f875cdeedef499b8de4ab8d1baf0
     vertices: []
     indices: 
     edges: []
