@@ -32,9 +32,8 @@ public class Inventario : MonoBehaviour
     {
         if(ListaDeITems!=null)
         {
-            //Aqui no de que demonios poner 
+            
         }
-        
 
     }
 
