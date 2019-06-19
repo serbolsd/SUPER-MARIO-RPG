@@ -12,7 +12,7 @@ public class sMarioJumpState : mrpgState
          * *  Animation changes got here
          * ************************
          * */
-        GetComponent<cCharacter>().m_Stats.m_zAxisSpeed += GetComponent<cCharacter>().m_Stats.m_jumpForce;
+        //GetComponent<cCharacter>().m_Stats.m_zAxisSpeed += GetComponent<cCharacter>().m_Stats.m_jumpForce;
     }
 
     public override void
@@ -40,7 +40,7 @@ public class sMarioJumpState : mrpgState
     {
         GetComponent<cCharacter>().m_Stats.m_direction = InputManager.Joystick() * Time.fixedDeltaTime;
         gameObject.transform.position += GetComponent<cCharacter>().m_Stats.m_direction;
-        GetComponent<cCharacter>().m_Stats.m_zAxisSpeed -= GetComponent<cCharacter>().m_Stats.m_gravForce * Time.fixedDeltaTime;
+        //GetComponent<cCharacter>().m_Stats.m_zAxisSpeed -= GetComponent<cCharacter>().m_Stats.m_gravForce * Time.fixedDeltaTime;
     }
 
     public override void

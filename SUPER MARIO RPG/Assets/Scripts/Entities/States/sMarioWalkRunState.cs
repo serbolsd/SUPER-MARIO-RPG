@@ -45,11 +45,11 @@ public class sMarioWalkRunState : mrpgState
          * *  Check run button
          * ************************
          * */
-        if (InputManager.YButton())
+        if (Input.GetButtonDown("Boton_Y"))
         {
             GetComponent<cCharacter>().m_Stats.m_running = true;
         }
-        else
+        else if (Input.GetButtonUp("Boton_Y"))
         {
             GetComponent<cCharacter>().m_Stats.m_running = false;
         }

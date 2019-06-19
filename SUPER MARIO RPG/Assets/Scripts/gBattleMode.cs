@@ -18,7 +18,17 @@ namespace mrpgGameMode
     }
 }
 
-public class gGameModeData 
+public class gBattleMode 
 {
-    
+    void sortTurns()
+    {
+        bool swaped = false;
+        while (swaped)
+        {
+
+        }
+    }
+
+    GameObject[] arrInitiativeOrder;
+    GameObject[] arrCombatants;
 }

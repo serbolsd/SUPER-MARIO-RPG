@@ -16,7 +16,7 @@ public class cStats : MonoBehaviour
     [SerializeField]
     public int m_MagATK;
     [SerializeField]
-    public int m_MagDef;
+    public int m_MagDEF;
     [SerializeField]
     public int m_bSpeed;
     #endregion
@@ -27,6 +27,10 @@ public class cStats : MonoBehaviour
     public float m_moveSpeed;
 
     [SerializeField]
+    [Range(0.5f, 10f)]
+    public float m_runSpeed;
+
+    [SerializeField]
     [Range(1f, 1000f)]
     public float m_jumpForce;
 
@@ -35,9 +39,17 @@ public class cStats : MonoBehaviour
     public float m_gravForce;
 
     [SerializeField]
-    public float m_zAxisSpeed;
+    public float m_initialHeight;
+
+    [SerializeField]
+    public float m_yVelocity;
 
     public Vector3 m_direction;
+    #endregion
+
+    #region Control Flags
+    public bool m_jumping = false;
     public bool m_running = false;
+    public bool m_moving = false;
     #endregion
 }

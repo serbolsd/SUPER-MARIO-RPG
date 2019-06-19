@@ -36,7 +36,7 @@ public class cCharacter : cInteractable
 
     public int getMagDEF()
     {
-        return m_Stats.m_MagDef;
+        return m_Stats.m_MagDEF;
     }
 
     public override bool interact(fsmMarioMachine _mm)
