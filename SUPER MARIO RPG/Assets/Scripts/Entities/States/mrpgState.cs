@@ -12,7 +12,7 @@ public abstract class mrpgState : MonoBehaviour
         MSM = FSM;
     }
     public abstract void onEnter();
-    public abstract void onExit();
     public abstract void onPreUpdate();
     public abstract void onUpdate();
+    public abstract void onExit();
 }

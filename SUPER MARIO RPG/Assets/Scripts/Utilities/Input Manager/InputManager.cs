@@ -21,7 +21,7 @@ public static class InputManager
     }
     public static Vector3 Joystick()
     {
-       return new Vector3(EjeHorizontal(), 0, EjeVertical());
+       return new Vector3(EjeHorizontal(), EjeVertical(), 0);
     }
     //Botones
     public static bool AButton()

@@ -7,7 +7,11 @@ public class sPauseState : mrpgState
     public override void
     onEnter()
     {
-
+        /**
+         * ************************
+         * *  Animation changes got here
+         * ************************
+         * */
     }
 
     public override void

@@ -8,4 +8,6 @@ public class gUtilities : MonoBehaviour
     {
         return (int)Mathf.Max(1, (_char.getATK() - _target.getDEF()) * timingMod);
     }
+
+
 }

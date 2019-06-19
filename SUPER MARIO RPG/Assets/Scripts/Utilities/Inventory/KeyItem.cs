@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.Collections;
 
-public class KeyItem : Item
+public abstract class KeyItem : Item
 {
-
 
 }

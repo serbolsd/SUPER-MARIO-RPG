@@ -2,33 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cCharacter : MonoBehaviour
+public class cCharacter : cInteractable
 {
+    private void Start()
+    {
+        m_Stats = GetComponent<cStats>();
+    }
+
+    public int getLVL()
+    {
+        return m_Stats.m_LVL;
+    }
 
     public int getATK()
     {
-        return (int)m_Stats.m_ATK;
+        return m_Stats.m_ATK;
     }
 
     public int getDEF()
     {
-        return (int)m_Stats.m_DEF;
+        return m_Stats.m_DEF;
     }
 
     public int getHP()
     {
-        return (int)m_Stats.m_HP;
+        return m_Stats.m_HP;
     }
 
     public int getMagATK()
     {
-        return (int)m_Stats.m_MagATK;
+        return m_Stats.m_MagATK;
     }
 
     public int getMagDEF()
     {
-        return (int)m_Stats.m_MagDef;
+        return m_Stats.m_MagDef;
     }
 
-    cStats m_Stats;
+    public override bool interact(fsmMarioMachine _mm)
+    {
+        return false;
+    }
+
+    [SerializeField]
+    public cStats m_Stats;
 }

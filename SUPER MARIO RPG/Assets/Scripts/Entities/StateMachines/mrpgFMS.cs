@@ -4,22 +4,6 @@ using UnityEngine;
 
 public abstract class mrpgFMS : MonoBehaviour
 {
-    void 
-    Start()
-    {
-        
-        rb = gameObject.AddComponent<Rigidbody2D>();
-        rb.gravityScale = 0;
-        anmtr = gameObject.AddComponent<Animator>();
-        cc = gameObject.AddComponent<CircleCollider2D>();
-        sr = gameObject.AddComponent<SpriteRenderer>();
-        
-
-        cf.NoFilter();
-
-        stateStack = new Stack<mrpgState>();
-    }
-
     public void 
     setState(mrpgState newState)
     {
@@ -46,6 +30,12 @@ public abstract class mrpgFMS : MonoBehaviour
     public void 
     onUpdate()
     {
+        stateStack.Peek().onUpdate();
+    }
+
+    public void
+    onPreUpdate()
+    {
         cc.OverlapCollider(cf, arrContacts);
         if (arrContacts.Length > 0)
         {
@@ -54,14 +44,13 @@ public abstract class mrpgFMS : MonoBehaviour
                 arrGO_Contacts[i] = arrContacts[i].gameObject;
             }
         }
-        stateStack.Peek().onUpdate();
+        stateStack.Peek().onPreUpdate();
     }
 
 
-    private Stack<mrpgState> stateStack;
+    protected Stack<mrpgState> stateStack;
 
-    private ContactFilter2D cf;
-
+    protected ContactFilter2D cf;
 
     public Rigidbody2D rb;
     public Animator anmtr;
