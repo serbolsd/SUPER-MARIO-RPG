@@ -1,12 +1,9 @@
 fileFormatVersion: 2
-guid: 2bf2a13bd4313564c85b6104b351107f
+guid: 536b8dcdb155761459a219d5675fa6b7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_0
-    21300002: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_1
-    21300004: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_2
-    21300006: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_3
-    21300008: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_4
+    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Kinklink_0
+    21300002: SNES - Super Mario RPG Legend of the Seven Stars - Kinklink_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -36,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -89,13 +86,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_0
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Kinklink_0
       rect:
         serializedVersion: 2
-        x: 424
-        y: 1562
-        width: 583
-        height: 414
+        x: 10
+        y: 199
+        width: 20
+        height: 178
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,79 +100,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61e663e7494b22c4c924661dd273008b
+      spriteID: 217cbeb0ddd62a940bfa67727bf540ec
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_1
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Kinklink_1
       rect:
         serializedVersion: 2
-        x: 933
-        y: 1932
-        width: 596
-        height: 495
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80e950da6c7a0294d9362b22b929dfe8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_2
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 549
-        width: 553
-        height: 584
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aa3fd7d8c435b041b6766f4a3740d09
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_3
-      rect:
-        serializedVersion: 2
-        x: 1065
-        y: 751
-        width: 406
-        height: 166
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4afa6cf64a57d5b45b304287fa2e9c2c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowsers Keep_4
-      rect:
-        serializedVersion: 2
-        x: 1437
-        y: 1359
-        width: 414
-        height: 334
+        x: 38
+        y: 201
+        width: 23
+        height: 176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,7 +120,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf55bb610980744cab25ace894744eb
+      spriteID: c5093065355ad1543a59fc463debe5c5
       vertices: []
       indices: 
       edges: []
@@ -191,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 069dcecfe5663054badf33fd1268ce5c
+    spriteID: dd32be446ccaf734a8202f1df12fd271
     vertices: []
     indices: 
     edges: []

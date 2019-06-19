@@ -1,8 +1,9 @@
 fileFormatVersion: 2
-guid: eabd62e439fc3a747b8976ab40444d23
+guid: 83a78e38cffb75a498a302863ae2f111
 TextureImporter:
   fileIDToRecycleName:
-    21300000: pasillo1
+    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Bowser Battle Cutscene
+      (1)_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -32,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -46,8 +47,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
-  spriteBorder: {x: 1401, y: 1351, z: 1147, w: 927}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -62,9 +63,9 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: 4
-    textureCompression: 0
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,9 +74,9 @@ TextureImporter:
   - serializedVersion: 2
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: 4
-    textureCompression: 0
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -85,13 +86,14 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pasillo1
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser Battle Cutscene
+        (1)_0
       rect:
         serializedVersion: 2
-        x: 1421
-        y: 1332
-        width: 425
-        height: 364
+        x: 260
+        y: 410
+        width: 127
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,7 +101,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa4b19cafb43cf24ea2125c429f4a86f
+      spriteID: 532d1bc3990c40a469b7f3b592f09b54
       vertices: []
       indices: 
       edges: []
@@ -107,7 +109,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: d2191882a6b0c9348914ea90b5144f22
+    spriteID: da6f48a27a589b143bafb03b1a465e84
     vertices: []
     indices: 
     edges: []
