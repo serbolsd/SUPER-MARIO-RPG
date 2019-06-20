@@ -25,7 +25,7 @@ public class CameraFollow : MonoBehaviour
     }
 
     [SerializeField]
-    private Transform m_Mario;
+    Transform m_Mario;
     Vector3 m_pos;
     
     Vector3 m_dir;
