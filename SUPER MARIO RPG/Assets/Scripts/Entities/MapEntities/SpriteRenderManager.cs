@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class SpriteRenderManager : MonoBehaviour
 {
-    GameObject[]Sprite;
+    public GameObject[]Sprite;
 
 }
