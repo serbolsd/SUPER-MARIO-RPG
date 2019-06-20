@@ -23,11 +23,11 @@ public class cStats : MonoBehaviour
 
     #region Movenment Stats
     [SerializeField]
-    [Range(0.5f, 10f)]
+    [Range(0f, 10f)]
     public float m_moveSpeed;
 
     [SerializeField]
-    [Range(0.5f, 10f)]
+    [Range(0f, 10f)]
     public float m_runSpeed;
 
     [SerializeField]
@@ -35,7 +35,7 @@ public class cStats : MonoBehaviour
     public float m_jumpForce;
 
     [SerializeField]
-    [Range(1f, 100f)]
+    [Range(1f, 150f)]
     public float m_gravForce;
 
     [SerializeField]

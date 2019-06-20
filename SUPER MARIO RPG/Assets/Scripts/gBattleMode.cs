@@ -18,6 +18,8 @@ namespace mrpgGameMode
     }
 }
 
+
+
 public class gBattleMode 
 {
     void sortTurns()
