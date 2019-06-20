@@ -273,10 +273,10 @@ MonoBehaviour:
   m_MagATK: 2
   m_MagDEF: 2
   m_bSpeed: 5
-  m_moveSpeed: 1.5
+  m_moveSpeed: 0.8
   m_runSpeed: 3
-  m_jumpForce: 15
-  m_gravForce: 30
+  m_jumpForce: 35
+  m_gravForce: 115
   m_initialHeight: 0
   m_yVelocity: 0
   m_direction: {x: 0, y: 0, z: 0}

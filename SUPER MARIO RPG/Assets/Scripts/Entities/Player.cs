@@ -95,7 +95,22 @@ public class Player : MonoBehaviour
              * */
             if (m_Stats.m_moving)
             {
-                m_Stats.m_direction = InputManager.Joystick() * Time.fixedDeltaTime;
+                m_Stats.m_direction = InputManager.Joystick() * Time.fixedDeltaTime * m_Stats.m_moveSpeed;
+                bool horizontal = false;
+                bool vertical = false;
+                if (Mathf.Abs(InputManager.EjeHorizontal()) >= gUtilities.kHORIZONTAL_DIR)
+                {
+                    horizontal = true;
+                }
+                if (Mathf.Abs(InputManager.EjeVertical()) >= gUtilities.kHORIZONTAL_DIR)
+                {
+                    vertical = true;
+                }
+                if(horizontal && vertical)
+                {
+                    m_Stats.m_direction.x *= gUtilities.kHORIZONTAL_DIR;
+                    m_Stats.m_direction.y *= gUtilities.kVERTICAL_DIR;
+                }
                 if (m_Stats.m_running)
                 {
                     m_Stats.m_direction *= m_Stats.m_runSpeed;
