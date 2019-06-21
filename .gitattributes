@@ -51,3 +51,4 @@
 *.meta linguist-generated
 *.prefab linguist-generated
 *.unity linguist-generated
+*.mp4 filter=lfs diff=lfs merge=lfs -text

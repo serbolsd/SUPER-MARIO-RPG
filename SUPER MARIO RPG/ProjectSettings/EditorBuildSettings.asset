@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Mapas/INICIO.unity
+    path: Assets/Scenes/Mapas/Cinematicainicial.unity
     guid: 503b2afdd1da67f4fa17324dda0f4bc2
   - enabled: 1
     path: Assets/Scenes/PRESSTART.unity
@@ -21,9 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SETNAMEMENU.unity
     guid: 3ff5e09856ab8584faa104aa56018cd4
   - enabled: 1
-    path: Assets/Mapas/PROLOGO.unity
+    path: Assets/Scenes/Mapas/Entrada al castillo.unity
     guid: c974819741bb05046991a99e7d509722
   - enabled: 1
-    path: Assets/Mapas/FisrtRoom(Empty).unity
+    path: Assets/Scenes/Maps/FisrtRoom(Empty).unity
     guid: 71dd49c6c2353a74598898d39a8aaa43
   m_configObjects: {}

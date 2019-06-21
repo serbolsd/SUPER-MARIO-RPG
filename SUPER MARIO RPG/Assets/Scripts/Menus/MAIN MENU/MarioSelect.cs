@@ -34,7 +34,7 @@ public class MarioSelect : MonoBehaviour
         jumpPos[0] = new Vector3(-0.482f, -1.271f,0.0f);
         jumpPos[1] = new Vector3(-0.482f, 0.599f, 0.0f);
         jumpPos[2] = new Vector3(-0.482f, 1.056f, 0.0f);
-        allMenu.active = false;
+        allMenu.SetActive(false);
         this.transform.position = jumpPos[0];
         this.GetComponent<SpriteRenderer>().sprite = marioMenu[1];
         marco.GetComponent<SpriteRenderer>().sprite.texture.mipMapBias = 1;
@@ -65,7 +65,7 @@ public class MarioSelect : MonoBehaviour
         }
         else
         {
-            allMenu.active = true;
+            allMenu.SetActive(true);
         }
         if(!finishJump)
         {

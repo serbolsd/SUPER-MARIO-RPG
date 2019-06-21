@@ -18,7 +18,7 @@ public class SALTAR : MonoBehaviour
     void Update()
     {
         timeTrans += Time.deltaTime;
-        if (timeTrans > 5&&InputManager.anyButton())
+        if (timeTrans > 5 && InputManager.anyButton())
         {
             SceneManager.LoadScene("PRESSTART");
         }

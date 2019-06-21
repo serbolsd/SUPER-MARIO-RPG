@@ -25,11 +25,11 @@ public class iaTerrapin : MonoBehaviour
         m_dir = m_target.position - transform.position;
         m_distTarget = m_dir.magnitude;
         m_dir.Normalize();
-        if (m_dir.x > gUtilities.kSTICKDEADZONE)
+        if (Mathf.Abs(m_dir.x) > gUtilities.kSTICKDEADZONE)
         {
             m_horizontal = true;
         }
-        if (m_dir.y > gUtilities.kSTICKDEADZONE)
+        if (Mathf.Abs(m_dir.y) > gUtilities.kSTICKDEADZONE)
         {
             m_vertical = true;
         }

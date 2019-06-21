@@ -21,8 +21,63 @@ public static class InputManager
     }
     public static Vector3 Joystick()
     {
-       return new Vector3(EjeHorizontal(), EjeVertical(), 0);
+        return new Vector3(EjeHorizontal(), EjeVertical(), 0);
     }
+
+    public static bool jostickMoveHorizontal()
+    {
+        if (EjeHorizontal() != 0)
+        {
+            return true;
+        }
+        return false;
+    }
+    public static bool jostickMoveVertical()
+    {
+        if (EjeVertical() != 0)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    public static bool UPButton()
+    {
+        float i = Input.GetAxis("UP");
+        if (i > 0)
+        {
+            return true;
+        }
+        return false;
+    }
+    public static bool DOWNButton()
+    {
+        float i = Input.GetAxis("UP");
+        if (i < 0)
+        {
+            return true;
+        }
+        return false;
+    }
+    public static bool RightButton()
+    {
+        float i = Input.GetAxis("RIGHT");
+        if (i > 0)
+        {
+            return true;
+        }
+        return false;
+    }
+    public static bool LefhtButton()
+    {
+        float i = Input.GetAxis("RIGHT");
+        if (i < 0)
+        {
+            return true;
+        }
+        return false;
+    }
+
     //Botones
     public static bool AButton()
     {
@@ -56,5 +111,24 @@ public static class InputManager
     {
         return Input.GetButtonDown("LB");
     }
-
+    public static bool anyButton()
+    {
+        if (LBButton())
+            return true;
+        if (RBButton())
+            return true;
+        if (BackButton())
+            return true;
+        if (StartButton())
+            return true;
+        if (YButton())
+            return true;
+        if (XButton())
+            return true;
+        if (BButton())
+            return true;
+        if (AButton())
+            return true;
+        return false;
+    }
 }
