@@ -22,6 +22,11 @@ public class SALTAR : MonoBehaviour
         {
             SceneManager.LoadScene("PRESSTART");
         }
+        else if(timeTrans>332)
+        {
+            SceneManager.LoadScene("PRESSTART");
+
+        }
 
     }
 }
