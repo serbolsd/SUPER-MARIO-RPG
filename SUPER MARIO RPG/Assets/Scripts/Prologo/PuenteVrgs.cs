@@ -12,11 +12,12 @@ public class PuenteVrgs : MonoBehaviour
     Vector3 finalPos1;
     Vector3 finalPos2;
     bool start = false;
+    public bool finish;
     // Start is called before the first frame update
     void Start()
     {
-        endTime1 = 0.2f;
-        endTime2 = 0.4f;
+        endTime1 = 0.1f;
+        endTime2 = 0.2f;
         initPos = this.transform.position;
         finalPos1 = new Vector3(this.transform.position.x,this.transform.position.y-.08f,0.0f);
         finalPos2 = new Vector3(this.transform.position.x, this.transform.position.y - 1f, 0.0f);
@@ -26,7 +27,7 @@ public class PuenteVrgs : MonoBehaviour
     void Update()
     {
         
-        fallwood();
+        //fallwood();
     }
     public void fallwood()
     {
@@ -49,7 +50,10 @@ public class PuenteVrgs : MonoBehaviour
         if (!fase2)
         {
             fall12();
+            return;
         }
+        finish = true;
+        this.GetComponent<SpriteRenderer>().enabled = false;
         return;//algo
     }
 

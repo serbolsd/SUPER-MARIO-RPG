@@ -11,6 +11,7 @@ using UnityEngine;
  * */
 public class Player : MonoBehaviour
 {
+    public bool isCutScene = false;
     private void Start()
     {
         m_Stats = GetComponent<cStats>();
@@ -23,99 +24,104 @@ public class Player : MonoBehaviour
      * */
     private void FixedUpdate()
     {
+        if (!isCutScene)
         {
-            /**
-             * * Pause
-             * */
-            if (InputManager.XButton())
+        //    return;
+        
             {
-                //TODO: pause
-            }
-        }
-
-        {
-            /**
-             * * Interact
-             * */
-            if (InputManager.AButton())
-            {
-
-            }
-        }
-
-        {
-            /**
-             * * Jump input
-             * */
-            if (InputManager.BButton())
-            {
-                if (!m_Stats.m_jumping)
+                /**
+                 * * Pause
+                 * */
+                if (InputManager.XButton())
                 {
-                    JumpStart();
+                    //TODO: pause
                 }
             }
-            if (m_Stats.m_jumping)
+            
             {
-                JumpUpdate();
-            }
-
-        }
-
-        {
-            /**
-             * * Stick input
-             * */
-            if (InputManager.Joystick() == Vector3.zero)
-            {
-                m_Stats.m_moving = false;
-            }
-            else
-            {
-                m_Stats.m_moving = true;
-            }
-        }
-
-        {
-            /**
-            * *  Check run button
-            * */
-            if (Input.GetButtonDown("Boton_Y"))
-            {
-                m_Stats.m_running = true;
-            }
-            else if (Input.GetButtonUp("Boton_Y"))
-            {
-                m_Stats.m_running = false;
-            }
-        }
-
-        {
-            /**
-             * *  Movement 
-             * */
-            if (m_Stats.m_moving)
-            {
-                m_Stats.m_direction = InputManager.Joystick() * Time.fixedDeltaTime * m_Stats.m_moveSpeed;
-                bool horizontal = false;
-                bool vertical = false;
-                if (Mathf.Abs(InputManager.EjeHorizontal()) >= gUtilities.kHORIZONTAL_DIR)
+                /**
+                 * * Interact
+                 * */
+                if (InputManager.AButton())
                 {
-                    horizontal = true;
+            
                 }
-                if (Mathf.Abs(InputManager.EjeVertical()) >= gUtilities.kHORIZONTAL_DIR)
+            }
+            
+            {
+                /**
+                 * * Jump input
+                 * */
+                if (InputManager.BButton())
                 {
-                    vertical = true;
+                    if (!m_Stats.m_jumping)
+                    {
+                        JumpStart();
+                    }
                 }
-                if(horizontal && vertical)
+                if (m_Stats.m_jumping)
                 {
-                    m_Stats.m_direction.x *= gUtilities.kHORIZONTAL_DIR;
-                    m_Stats.m_direction.y *= gUtilities.kVERTICAL_DIR;
+                    JumpUpdate();
                 }
-                if (m_Stats.m_running)
+            
+            }
+            
+            {
+                /**
+                 * * Stick input
+                 * */
+                if (InputManager.Joystick() == Vector3.zero)
                 {
-                    m_Stats.m_direction *= m_Stats.m_runSpeed;
+                    m_Stats.m_moving = false;
                 }
-                gameObject.transform.position += m_Stats.m_direction;
+                else
+                {
+                    m_Stats.m_moving = true;
+                }
+            }
+            
+            {
+                /**
+                * *  Check run button
+                * */
+                if (Input.GetButtonDown("Boton_Y"))
+                {
+                    m_Stats.m_running = true;
+                }
+                else if (Input.GetButtonUp("Boton_Y"))
+                {
+                    m_Stats.m_running = false;
+                }
+            }
+            
+            {
+                /**
+                 * *  Movement 
+                 * */
+                if (m_Stats.m_moving)
+                {
+                    m_Stats.m_direction = InputManager.Joystick() * Time.fixedDeltaTime * m_Stats.m_moveSpeed;
+                    bool horizontal = false;
+                    bool vertical = false;
+                    if (Mathf.Abs(InputManager.EjeHorizontal()) >= gUtilities.kHORIZONTAL_DIR)
+                    {
+                        horizontal = true;
+                    }
+                    if (Mathf.Abs(InputManager.EjeVertical()) >= gUtilities.kHORIZONTAL_DIR)
+                    {
+                        vertical = true;
+                    }
+                    if (horizontal && vertical)
+                    {
+                        m_Stats.m_direction.x *= gUtilities.kHORIZONTAL_DIR;
+                        m_Stats.m_direction.y *= gUtilities.kVERTICAL_DIR;
+                    }
+                    if (m_Stats.m_running)
+                    {
+                        m_Stats.m_direction *= m_Stats.m_runSpeed;
+                    }
+                    gameObject.transform.position += m_Stats.m_direction;
+                }
             }
         }
     }

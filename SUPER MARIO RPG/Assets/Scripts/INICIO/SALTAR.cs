@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class SALTAR : MonoBehaviour
 {
     float timeTrans=0;
-    bool canSkip = false;
 
     // Start is called before the first frame update
     void Start()

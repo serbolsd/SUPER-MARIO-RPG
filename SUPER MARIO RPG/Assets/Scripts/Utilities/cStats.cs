@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class cStats : MonoBehaviour
 {
+    
+
     #region Battle Stats
     [SerializeField]
     public int m_LVL;

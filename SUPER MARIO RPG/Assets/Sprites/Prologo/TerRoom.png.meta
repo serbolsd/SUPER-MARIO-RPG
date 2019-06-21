@@ -6,6 +6,7 @@ TextureImporter:
     21300002: puente
     21300004: Tablon
     21300006: door
+    21300008: opendoor3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -163,6 +164,26 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5318dca319ea30d4c97857a65f093c88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opendoor3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 2285
+        width: 186
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d42e30686b6672459baac74493007e6
       vertices: []
       indices: 
       edges: []
