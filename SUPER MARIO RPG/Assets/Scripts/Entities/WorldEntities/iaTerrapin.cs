@@ -13,6 +13,9 @@ public class iaTerrapin : MonoBehaviour
         m_targetPoint = 0;
         m_target = p0;
         m_targetMario = Camera.main.GetComponent<CameraFollow>().getMario();
+        m_Timer = m_lookAroundTime;
+        m_lookingAround = false;
+        m_ignoreLookAround = false;
     }
 
     // Update is called once per frame
@@ -23,6 +26,7 @@ public class iaTerrapin : MonoBehaviour
 
         #region Direction calc
         m_dir = m_target.position - transform.position;
+        m_dir.z = 0;
         m_distTarget = m_dir.magnitude;
         m_dir.Normalize();
         if (Mathf.Abs(m_dir.x) > gUtilities.kSTICKDEADZONE)
@@ -37,17 +41,22 @@ public class iaTerrapin : MonoBehaviour
         if (m_vertical && !m_horizontal)
         {
             m_dir.x = 0;
-            m_dir.y = 1;
+            m_dir.y *= Mathf.Abs(m_dir.y / Mathf.Abs(m_dir.y));
         }
         else if (!m_vertical && m_horizontal)
         {
-            m_dir.x = 1;
+            m_dir.x *= Mathf.Abs(m_dir.x / Mathf.Abs(m_dir.x));
             m_dir.y = 0;
         }
         else if (m_vertical && m_horizontal)
         {
             m_dir.x *= gUtilities.kHORIZONTAL_DIR;
             m_dir.y *= gUtilities.kVERTICAL_DIR;
+        }
+        else if(m_dir.y == 1 && m_target != m_targetMario)
+        {
+            int i = 0;
+            ++i;
         }
         else
         {
@@ -64,22 +73,43 @@ public class iaTerrapin : MonoBehaviour
                 m_world_Terrapin_IA_Mode = 1;
                 m_target = m_targetMario;
                 m_Timer = m_chaseTime;
+                m_lookingAround = false;
             }
+
+            else if((centerPoint.position - transform.position).magnitude < m_dist * 3 && !m_ignoreLookAround)
+            {
+                if(Random.Range(0, 2) == 1)
+                {
+                    m_Timer = m_lookAroundTime;
+                    m_lookingAround = true;
+                    m_ignoreLookAround = true;
+                }
+                else
+                {
+                    m_lookingAround = false;
+                    m_ignoreLookAround = true;
+                }
+            }
+
             else if (m_distTarget < m_dist)
             {
                 if (m_targetPoint == 0)
                 {
                     m_target = p1;
                     m_targetPoint = 1;
+                    m_ignoreLookAround = false;
                 }
                 else
                 {
                     m_target = p0;
                     m_targetPoint = 0;
+                    m_ignoreLookAround = false;
                 }
             }
         }
         #endregion
+
+        
 
         #region chase exit
         if (m_world_Terrapin_IA_Mode == 1)
@@ -108,7 +138,42 @@ public class iaTerrapin : MonoBehaviour
         if (m_world_Terrapin_IA_Mode != 2)
         {
             // Seek
-            transform.position += m_dir * m_moveSpeed * Time.fixedDeltaTime;
+            #region LookAroundnTurn
+
+            if (m_world_Terrapin_IA_Mode == 0 && m_lookingAround)
+            {
+                //looking animation
+                if (m_Timer <= 0)
+                {
+                    if(Random.Range(0, 2) == 1)
+                    {
+                        if(m_target == p0)
+                        {
+                            m_target = p1;
+                        }
+                        else
+                        {
+                            m_target = p0;
+                        }
+                        m_ignoreLookAround = true;
+                        m_lookingAround = false;
+                    }
+                }
+                m_Timer -= Time.fixedDeltaTime;
+            }
+
+            #endregion
+            else if(m_world_Terrapin_IA_Mode == 1)
+            {
+                transform.position += m_dir * m_moveSpeed * Time.fixedDeltaTime * 1.25f;
+            }
+            else
+            {
+                if (!m_lookingAround)
+                    transform.position += m_dir * m_moveSpeed * Time.fixedDeltaTime;
+                else
+                    transform.position = centerPoint.position;
+            }
         }
         else
         {
@@ -119,6 +184,9 @@ public class iaTerrapin : MonoBehaviour
 
     public Transform p0;
     public Transform p1;
+    public Transform centerPoint;
+
+
 
     [SerializeField]
     [Range(0f, 1f)]
@@ -141,13 +209,23 @@ public class iaTerrapin : MonoBehaviour
     public float m_fleeTime;
 
     [SerializeField]
+    [Range(0f, 5f)]
+    public float m_lookAroundTime;
+
+    [SerializeField]
     Transform m_targetMario;
     Transform m_target;
+    [SerializeField]
     Vector3 m_dir;
+
+    [SerializeField]
     int m_world_Terrapin_IA_Mode;
     int m_targetPoint;
     bool m_horizontal;
     bool m_vertical;
+    bool m_lookingAround;
+    bool m_ignoreLookAround;
     float m_distTarget;
+    [SerializeField]
     float m_Timer;
 }
