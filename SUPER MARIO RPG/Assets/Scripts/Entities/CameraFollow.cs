@@ -38,6 +38,18 @@ public class CameraFollow : MonoBehaviour
 
     void checklayout()
     {
-
+        for (int i = 0; i < objectsInScene.Length; i++)
+        {
+            if(objectsInScene[i].transform.position.y< getMario().position.y)
+            {
+                objectsInScene[i].GetComponentInChildren<SpriteRenderer>().sortingOrder = 3;
+            }
+            else
+            {
+                //objectsInScene[i].GetComponent<SpriteRenderer>().renderingLayerMask = 1;
+                objectsInScene[i].GetComponentInChildren<SpriteRenderer>().sortingOrder = 1;
+                //objectsInScene[i].GetComponentInChildren<SpriteRenderer>().renderingLayerMask = 1;
+            }
+        }
     }
 }

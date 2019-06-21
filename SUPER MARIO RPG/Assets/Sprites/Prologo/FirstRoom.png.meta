@@ -8,6 +8,9 @@ TextureImporter:
     21300006: pilar3
     21300008: pilar4
     21300010: pilar5
+    21300012: soldado1
+    21300014: soldado2
+    21300016: opendoor
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -205,6 +208,66 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5ff05e62046d83d459536976d1991240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado1
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 652
+        width: 160
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcda522e3b8b9f848a72939a87d82f6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: soldado2
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 325
+        width: 175
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb610240458d8e4385c5dc5f3e5796a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: opendoor
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 1199
+        width: 153
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61e6fa4291ed4e47b77c5fd0bed9e65
       vertices: []
       indices: 
       edges: []
