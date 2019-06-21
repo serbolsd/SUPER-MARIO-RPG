@@ -43,7 +43,7 @@ public static class InputManager
 
     public static bool UPButton()
     {
-        float i = Input.GetAxis("UP");
+        float i = Input.GetAxis("Vertical");
         if (i > 0)
         {
             return true;
@@ -52,7 +52,7 @@ public static class InputManager
     }
     public static bool DOWNButton()
     {
-        float i = Input.GetAxis("UP");
+        float i = Input.GetAxis("Vertical");
         if (i < 0)
         {
             return true;
@@ -61,7 +61,7 @@ public static class InputManager
     }
     public static bool RightButton()
     {
-        float i = Input.GetAxis("RIGHT");
+        float i = Input.GetAxis("Horizontal");
         if (i > 0)
         {
             return true;
@@ -70,7 +70,7 @@ public static class InputManager
     }
     public static bool LefhtButton()
     {
-        float i = Input.GetAxis("RIGHT");
+        float i = Input.GetAxis("Horizontal");
         if (i < 0)
         {
             return true;
