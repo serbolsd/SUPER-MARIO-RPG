@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    public GameObject []objectsInScene;
     private void Start()
     {
         
@@ -17,6 +18,7 @@ public class CameraFollow : MonoBehaviour
         {
             transform.position += (m_dir * m_dir.magnitude);
         }
+        checklayout();
 
     }
     public ref Transform getMario()
@@ -25,7 +27,7 @@ public class CameraFollow : MonoBehaviour
     }
 
     [SerializeField]
-    Transform m_Mario;
+    private Transform m_Mario;
     Vector3 m_pos;
     
     Vector3 m_dir;
@@ -33,4 +35,9 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]
     [Range(0f, 1f)]
     float m_range;
+
+    void checklayout()
+    {
+
+    }
 }

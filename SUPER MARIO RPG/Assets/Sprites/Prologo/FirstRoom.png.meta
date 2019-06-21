@@ -3,6 +3,11 @@ guid: eb44f78d2af7e9947bb488349685c0ea
 TextureImporter:
   fileIDToRecycleName:
     21300000: FirstRoom_0
+    21300002: pilar1
+    21300004: pilar2
+    21300006: pilar3
+    21300008: pilar4
+    21300010: pilar5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,13 +98,113 @@ TextureImporter:
         width: 1850
         height: 1448
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: a11033da0c71aef48ace276f9ec483c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilar1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 2192
+        width: 232
+        height: 413
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9c7489e9deeb44abd15b7c2f201b04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilar2
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2194
+        width: 225
+        height: 415
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bb6d71bb9102d4ea81c93d950e025d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilar3
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 2212
+        width: 209
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5db9db41c380547be41aac28d7e656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilar4
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 2191
+        width: 219
+        height: 426
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c97d4ce27f9a548a38247befdab925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pilar5
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 2212
+        width: 231
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff05e62046d83d459536976d1991240
       vertices: []
       indices: 
       edges: []
