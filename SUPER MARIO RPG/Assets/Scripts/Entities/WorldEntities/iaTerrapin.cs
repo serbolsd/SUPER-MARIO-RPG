@@ -78,7 +78,7 @@ public class iaTerrapin : MonoBehaviour
 
             else if((centerPoint.position - transform.position).magnitude < m_dist * 3 && !m_ignoreLookAround)
             {
-                if(Random.Range(0, 2) == 1)
+                if(Random.Range(0, 3) == 1)
                 {
                     m_Timer = m_lookAroundTime;
                     m_lookingAround = true;
@@ -145,7 +145,7 @@ public class iaTerrapin : MonoBehaviour
                 //looking animation
                 if (m_Timer <= 0)
                 {
-                    if(Random.Range(0, 2) == 1)
+                    if(Random.Range(0, 4) < 2)
                     {
                         if(m_target == p0)
                         {
@@ -155,9 +155,9 @@ public class iaTerrapin : MonoBehaviour
                         {
                             m_target = p0;
                         }
-                        m_ignoreLookAround = true;
-                        m_lookingAround = false;
                     }
+                    m_ignoreLookAround = true;
+                    m_lookingAround = false;
                 }
                 m_Timer -= Time.fixedDeltaTime;
             }
@@ -212,13 +212,10 @@ public class iaTerrapin : MonoBehaviour
     [Range(0f, 5f)]
     public float m_lookAroundTime;
 
-    [SerializeField]
     Transform m_targetMario;
     Transform m_target;
-    [SerializeField]
     Vector3 m_dir;
 
-    [SerializeField]
     int m_world_Terrapin_IA_Mode;
     int m_targetPoint;
     bool m_horizontal;
@@ -226,6 +223,5 @@ public class iaTerrapin : MonoBehaviour
     bool m_lookingAround;
     bool m_ignoreLookAround;
     float m_distTarget;
-    [SerializeField]
     float m_Timer;
 }
