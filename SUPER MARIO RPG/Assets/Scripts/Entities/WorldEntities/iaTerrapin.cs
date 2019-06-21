@@ -36,16 +36,18 @@ public class iaTerrapin : MonoBehaviour
 
         if (m_vertical && !m_horizontal)
         {
+            m_dir.x = 0;
             m_dir.y = 1;
         }
         else if (!m_vertical && m_horizontal)
         {
             m_dir.x = 1;
+            m_dir.y = 0;
         }
         else if (m_vertical && m_horizontal)
         {
-            m_dir.x = gUtilities.kHORIZONTAL_DIR;
-            m_dir.y = gUtilities.kVERTICAL_DIR;
+            m_dir.x *= gUtilities.kHORIZONTAL_DIR;
+            m_dir.y *= gUtilities.kVERTICAL_DIR;
         }
         else
         {

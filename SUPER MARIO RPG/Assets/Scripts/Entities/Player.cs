@@ -98,11 +98,11 @@ public class Player : MonoBehaviour
                 m_Stats.m_direction = InputManager.Joystick() * Time.fixedDeltaTime * m_Stats.m_moveSpeed;
                 bool horizontal = false;
                 bool vertical = false;
-                if (Mathf.Abs(InputManager.EjeHorizontal()) >= gUtilities.kHORIZONTAL_DIR)
+                if (Mathf.Abs(InputManager.EjeHorizontal()) >= gUtilities.kSTICKDEADZONE)
                 {
                     horizontal = true;
                 }
-                if (Mathf.Abs(InputManager.EjeVertical()) >= gUtilities.kHORIZONTAL_DIR)
+                if (Mathf.Abs(InputManager.EjeVertical()) >= gUtilities.kSTICKDEADZONE)
                 {
                     vertical = true;
                 }

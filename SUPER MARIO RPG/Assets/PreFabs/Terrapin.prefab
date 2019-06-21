@@ -47,7 +47,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.02, y: -0.06}
+  m_Offset: {x: 0.02, y: 0.03}
   serializedVersion: 2
   m_Radius: 0.06
 --- !u!50 &3590720372500027761
@@ -85,11 +85,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p0: {fileID: 0}
   p1: {fileID: 0}
-  m_dist: 0.1
-  m_viewDist: 0.3
-  m_moveSpeed: 0.8
-  m_chaseTime: 5
-  m_fleeTime: 0.8
+  m_dist: 0.05
+  m_viewDist: 0.35
+  m_moveSpeed: 0.3
+  m_chaseTime: 3
+  m_fleeTime: 0.35
   m_targetMario: {fileID: 0}
 --- !u!1 &3590720373911588500
 GameObject:
@@ -116,7 +116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3590720373911588500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.107, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3590720372500027763}
