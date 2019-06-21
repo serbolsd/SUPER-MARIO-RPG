@@ -8,6 +8,8 @@ public class NAME : MonoBehaviour
 {
     // Start is called before the first frame update
     public string m_name;
+    public SpriteRenderer marco;
+    public bool pixelar;
     //int fila=0;
     //int columna=0;
     char[][] letters;
@@ -40,6 +42,7 @@ public class NAME : MonoBehaviour
     public bool isDone = false;
     void Start()
     {
+        marco.sprite.texture.mipMapBias = 0;
         initletters();
         initPosLetters();
         initObjetivepos();
@@ -50,7 +53,6 @@ public class NAME : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
     void initletters()
     {
@@ -301,8 +303,29 @@ public class NAME : MonoBehaviour
     }
     void done()
     {
+        if(maxIndex<1)
+        {
+            pixelar = true;
+            return;
+        }
         isDone = true;
         //SceneManager.LoadScene("PROLOGO");
         //PROLOGO
+    }
+    public void pixelear()
+    {
+        timeTrans += Time.deltaTime;
+        if (timeTrans < 0.1f)
+            marco.GetComponent<SpriteRenderer>().sprite.texture.mipMapBias = 4;
+        else if (timeTrans < 0.18f)
+            marco.GetComponent<SpriteRenderer>().sprite.texture.mipMapBias = 3;
+        else if (timeTrans < 0.24f)
+            marco.GetComponent<SpriteRenderer>().sprite.texture.mipMapBias = 2;
+        else if (timeTrans < 0.32f)
+        {
+            marco.GetComponent<SpriteRenderer>().sprite.texture.mipMapBias = 1;
+            timeTrans = 0;
+            pixelar = false;
+        }
     }
 }

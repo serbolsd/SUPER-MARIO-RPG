@@ -128,7 +128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &82618237
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -289,7 +289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &245861592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -396,6 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f27d98118da7944aff01d232d77777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sprite: []
 --- !u!1 &521453908
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +653,15 @@ MonoBehaviour:
   special: {fileID: 21300004, guid: a24e5595b67d554409b6baf107efadd3, type: 3}
   item: {fileID: 21300008, guid: a24e5595b67d554409b6baf107efadd3, type: 3}
   etc: {fileID: 21300006, guid: a24e5595b67d554409b6baf107efadd3, type: 3}
+  menuinfo: {fileID: 1556120388}
+  menusinfos:
+  - {fileID: 21300002, guid: 377db3cef13c1354a82fa5a89e688b49, type: 3}
+  - {fileID: 21300000, guid: 86a0a8df980ef9844bd6e205296005e9, type: 3}
+  - {fileID: 21300000, guid: 71faec96e0f67024ab2a1090f49c4692, type: 3}
+  fondoInfo1: {fileID: 82618237}
+  fondoInfo2: {fileID: 245861592}
+  fondoInfo2_1: {fileID: 521453910}
+  fondoInfo3: {fileID: 1952199655}
   menu: {fileID: 686468533}
 --- !u!1 &1552930095
 GameObject:
@@ -906,7 +916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1952199655
 SpriteRenderer:
   m_ObjectHideFlags: 0

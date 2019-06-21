@@ -25,6 +25,10 @@ public class HANDSELECT : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(selection.pixelar)
+        {
+            selection.pixelear();
+        }
         if(!dif.sceneIsVisible)
         {
             return;
