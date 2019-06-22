@@ -30,7 +30,7 @@ public class battlebuttons : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void onUpdate()
     {
         if(InputManager.AButton())
         {

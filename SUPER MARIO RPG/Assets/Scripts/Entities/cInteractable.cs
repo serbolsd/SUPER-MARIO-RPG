@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class cInteractable : MonoBehaviour
 {
-    public abstract bool interact(fsmMarioMachine _mm);
+    //public abstract bool interact(fsmMarioMachine _mm);
 }

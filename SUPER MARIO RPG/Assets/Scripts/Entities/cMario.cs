@@ -6,7 +6,7 @@ public class cMario : cCharacter
 {
     private void Start()
     {
-        m_MarioMachine = GetComponent<fsmMarioMachine>();
+        //m_MarioMachine = GetComponent<fsmMarioMachine>();
     }
-    public fsmMarioMachine m_MarioMachine;
+    //public fsmMarioMachine m_MarioMachine;
 }

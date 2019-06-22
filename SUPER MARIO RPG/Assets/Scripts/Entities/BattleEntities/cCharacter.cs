@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * ************************
+ * *
+ * *  Character class for use in combat 
+ * *
+ * ************************
+ * */
 public class cCharacter : cInteractable
 {
     private void Start()
@@ -39,11 +46,12 @@ public class cCharacter : cInteractable
         return m_Stats.m_MagDEF;
     }
 
-    public override bool interact(fsmMarioMachine _mm)
+    public virtual bool takeTurn()
     {
         return false;
     }
 
     [SerializeField]
     public cStats m_Stats;
+    public string m_name;
 }

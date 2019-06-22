@@ -39,10 +39,10 @@ public class sMarioIdleState : mrpgState
             {
                 for (int i = 0; i < GetComponent<fsmMarioMachine>().arrGO_Contacts.Length; ++i)
                 {
-                    if (GetComponent<fsmMarioMachine>().arrGO_Contacts[i].GetComponent<cCharacter>().interact(MSM as fsmMarioMachine))
+                    /*if (GetComponent<fsmMarioMachine>().arrGO_Contacts[i].GetComponent<cCharacter>().interact(MSM as fsmMarioMachine))
                     {
                         MSM.setState(GetComponent<fsmMarioMachine>().s_Dialog_CutScene);
-                    }
+                    }*/
                 }
             }
         }

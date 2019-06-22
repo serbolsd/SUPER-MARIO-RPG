@@ -12,6 +12,8 @@ public class cStats : MonoBehaviour
     [SerializeField]
     public int m_HP;
     [SerializeField]
+    public int m_currHP;
+    [SerializeField]
     public int m_ATK;
     [SerializeField]
     public int m_DEF;
