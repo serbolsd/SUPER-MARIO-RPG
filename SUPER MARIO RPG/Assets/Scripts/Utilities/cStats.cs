@@ -23,6 +23,10 @@ public class cStats : MonoBehaviour
     public int m_MagDEF;
     [SerializeField]
     public int m_bSpeed;
+    [SerializeField]
+    public int m_expReward;
+    [SerializeField]
+    public int m_coinReward;
     #endregion
 
     #region Movenment Stats

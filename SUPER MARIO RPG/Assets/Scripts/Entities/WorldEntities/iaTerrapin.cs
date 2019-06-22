@@ -182,6 +182,14 @@ public class iaTerrapin : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GetComponentInParent<gBattleMode>().startBattle(gameObject,
+                                                        gUtilities.makeCharCopies(new battleTerrapin(), Random.Range(1, 4)),
+                                                        gUtilities.makeCharCopies(new battleMario()), 
+                                                        m_BattleBG_Id);
+    }
+
     public Transform p0;
     public Transform p1;
     public Transform centerPoint;
@@ -211,6 +219,9 @@ public class iaTerrapin : MonoBehaviour
     [SerializeField]
     [Range(0f, 5f)]
     public float m_lookAroundTime;
+
+    [SerializeField]
+    public int m_BattleBG_Id;
 
     Transform m_targetMario;
     Transform m_target;

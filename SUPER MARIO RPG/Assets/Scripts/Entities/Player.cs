@@ -156,6 +156,11 @@ public class Player : MonoBehaviour
         return m_Stats.m_MagDEF;
     }
 
+    public cStats getStats()
+    {
+        return m_Stats;
+    }
+
     public void JumpStart()
     {
         m_Stats.m_yVelocity = 0;

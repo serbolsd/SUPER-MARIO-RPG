@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7470602921632059343}
   m_Layer: 0
   m_Name: Mario
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2529344568cac1042bff6dc468278fd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCutScene: 0
   m_MarioSpritePos: {fileID: 7470602920770689497}
   m_MarioDropShadow: {fileID: 7470602921856904551}
 --- !u!114 &7470602921632059341
@@ -144,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LVL: 1
   m_HP: 20
+  m_currHP: 0
   m_ATK: 20
   m_DEF: 20
   m_MagATK: 2

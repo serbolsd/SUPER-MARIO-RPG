@@ -51,6 +51,16 @@ public class cCharacter : cInteractable
         return false;
     }
 
+    public cStats getStatBlock()
+    {
+        return m_Stats;
+    }
+
+    public void setPos(Vector3 newPos)
+    {
+        gameObject.transform.position = newPos;
+    }
+
     [SerializeField]
     public cStats m_Stats;
     public string m_name;
