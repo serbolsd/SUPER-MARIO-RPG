@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Maps/FisrtRoom(Empty).unity
     guid: 71dd49c6c2353a74598898d39a8aaa43
+  - enabled: 1
+    path: Assets/Scenes/Maps/SecondScene(Combate).unity
+    guid: 73896772d93e94549a55a8b5da172e9b
+  - enabled: 1
+    path: Assets/Scenes/Maps/ThirdScene(BowserFirstFight).unity
+    guid: 34a476b9ab9084f429afb2795c33e98c
+  - enabled: 1
+    path: Assets/Scenes/Maps/FisrtBoss.unity
+    guid: 729b58c6db68cba448639c6f6383113b
   m_configObjects: {}
