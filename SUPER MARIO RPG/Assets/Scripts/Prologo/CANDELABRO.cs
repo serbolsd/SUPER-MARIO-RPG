@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class CANDELABRO : MonoBehaviour
 {
-    Vector3 posOrigin;
+    public Vector3 posOrigin;
+    public Vector3 finalPos;
+    public Vector3 MarioOriginPos;
+    public Vector3 MarioFinalPos;
+    public Transform marioPosActual;
+    public bool isCutScene=false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,23 +20,21 @@ public class CANDELABRO : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_pos = transform.position;
-        m_pos.z = 0;
-        m_dir = m_Mario.position - m_pos;
-        if (m_dir.magnitude > m_range)
+        if(isCutScene)
         {
-            transform.position += (m_dir);
-            transform.position =new Vector3 (transform.position.x, transform.position.y+.8f, transform.position.z);
+            return;
         }
-        
+        Vector3 vecActual = marioPosActual.position- MarioOriginPos;
+        Vector3 vecFinal = MarioFinalPos- MarioOriginPos;
+        float porcentaje= vecActual.magnitude / vecFinal.magnitude;
+        if(porcentaje<0)
+        {
+            porcentaje = 0;
+        }
+        Vector3 thispos = finalPos - posOrigin;
+        this.transform.position = posOrigin + (thispos * porcentaje);
+
+//        this.transform.position=
     }
-    [SerializeField]
-    private Transform m_Mario;
-    Vector3 m_pos;
 
-    Vector3 m_dir;
-
-    [SerializeField]
-    [Range(0f, 1f)]
-    float m_range;
 }

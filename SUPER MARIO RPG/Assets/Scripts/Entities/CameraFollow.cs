@@ -6,12 +6,16 @@ public class CameraFollow : MonoBehaviour
 {
     public GameObject []objectsInScene;
     public GameObject []candelabros;
+    public bool isCutScene = false;
     private void Start()
     {
         
     }
     private void Update()
     {
+        checklayout();
+        if (isCutScene)
+            return;
         m_pos = transform.position;
         m_pos.z = 0;
         m_dir = m_Mario.position - m_pos;
@@ -19,8 +23,7 @@ public class CameraFollow : MonoBehaviour
         {
             transform.position += (m_dir * m_dir.magnitude);
         }
-        checklayout();
-        candels();
+        //candels();
 
     }
     public ref Transform getMario()
@@ -61,7 +64,7 @@ public class CameraFollow : MonoBehaviour
         {
             for (int i = 0; i < candelabros.Length; i++)
             {
-                candelabros[i].transform.position += new Vector3(m_dir.x * .088f, m_dir.y * .068f,0.0f);
+                candelabros[i].transform.position += new Vector3(m_dir.x * .13f, m_dir.y * .1f,0.0f);
             }
         }
     }
