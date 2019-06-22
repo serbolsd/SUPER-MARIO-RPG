@@ -2,8 +2,10 @@ fileFormatVersion: 2
 guid: b72f13a12f84b884284a1f1cfb335bfe
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Princess Toadstool
-      Peach_0
+    21300000: peach3
+    21300002: peach4
+    21300004: peach1
+    21300006: peach2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -86,14 +88,33 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Princess Toadstool
-        Peach_0
+      name: peach3
       rect:
         serializedVersion: 2
-        x: 272
+        x: 271
         y: 167
-        width: 19
-        height: 94
+        width: 20
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c6cde404a7dc84493efb95a47c2428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peach4
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 167
+        width: 20
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -101,7 +122,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1c6cde404a7dc84493efb95a47c2428
+      spriteID: 5182be8a01a230447abed6196281fb21
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peach1
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 167
+        width: 20
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c7b7fc5d5aa0e47b91208d5c92e48b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: peach2
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 167
+        width: 20
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e2c49da4e84284296a94be1bd73aa6
       vertices: []
       indices: 
       edges: []
