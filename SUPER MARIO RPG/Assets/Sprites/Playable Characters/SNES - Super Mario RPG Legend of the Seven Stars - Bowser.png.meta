@@ -3,7 +3,7 @@ guid: 0aa7c1579a04c6d4e988b562225cbf3a
 TextureImporter:
   fileIDToRecycleName:
     21300000: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_0
-    21300002: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_1
+    21300002: bowser quieto
     21300004: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_2
     21300006: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_3
     21300008: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_4
@@ -18,6 +18,8 @@ TextureImporter:
     21300026: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_13
     21300028: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_14
     21300030: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_15
+    21300032: bowser risa1
+    21300034: bowser risa2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -63,7 +65,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -87,6 +89,39 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -120,7 +155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_1
+      name: bowser quieto
       rect:
         serializedVersion: 2
         x: 39
@@ -408,13 +443,53 @@ TextureImporter:
         width: 36
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: f9f67ebc91c3fbf48b11f65fbc8175c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bowser risa1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 763
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d610496527ae94c96353aecfb93ffe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bowser risa2
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 763
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cc0b857e9633149b31b75acd3bfc4e
       vertices: []
       indices: 
       edges: []

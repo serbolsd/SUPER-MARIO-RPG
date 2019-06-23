@@ -11,6 +11,7 @@ public class ENVENTBOSS : MonoBehaviour
     public SpriteRenderer renderMarioExtra;
     public Transform marioTrans;
     public Player MARIO;
+    public cStats statesMario;
     public Transform transCamera;
     public CANDELABRO[] candeledes;
     public bool initEvent = false;
@@ -50,7 +51,8 @@ public class ENVENTBOSS : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(initEvent)
+      
+        if (initEvent)
         {
             runEvent();
         }
@@ -63,6 +65,7 @@ public class ENVENTBOSS : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         MARIO.isCutScene = true;
+        MARIO.JumpEnd();
         for (int i = 0; i < candeledes.Length; i++)
         {
             candeledes[i].isCutScene = true;
@@ -76,6 +79,10 @@ public class ENVENTBOSS : MonoBehaviour
         timeTans += Time.deltaTime;
         if(timeTans>0.5f&&!start)
         {
+            for (int i = 0; i < candeledes.Length; i++)
+            {
+                candeledes[i].GetComponent<SpriteRenderer>().sortingOrder = 1;
+            }
             timeTans = 0;
             start = true;
         }
