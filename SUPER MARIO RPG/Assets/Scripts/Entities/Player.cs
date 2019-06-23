@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         m_Stats = GetComponent<cStats>();
+        m_battleMario = gameObject.AddComponent<battleMario>();
     }
 
     /**
@@ -195,6 +196,7 @@ public class Player : MonoBehaviour
         m_MarioSpritePos.localPosition = Vector3.zero;
     }
 
+    battleMario m_battleMario;
     cStats m_Stats;
     public Transform m_MarioSpritePos;
     private Transform m_LocalMarioSpritePos;

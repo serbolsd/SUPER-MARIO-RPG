@@ -64,4 +64,5 @@ public class cCharacter : cInteractable
     [SerializeField]
     public cStats m_Stats;
     public string m_name;
+    public int m_enemyId;
 }

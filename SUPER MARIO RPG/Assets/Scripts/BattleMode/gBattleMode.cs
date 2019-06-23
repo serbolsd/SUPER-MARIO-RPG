@@ -18,9 +18,30 @@ namespace mrpgBattleBGs
 
 public class gBattleMode : MonoBehaviour
 {
+    #region Start and Update
+    private void Start()
+    {
+        //m_arrInitiativeOrder = GetComponentsInChildren<cCharacter>();
+        //combatButtons = gameObject.AddComponent<battlebuttons>();
+        m_currTurn = 0;
+        m_srBG = Camera.main.GetComponentInChildren<SpriteRenderer>();
+        m_battleActive = false;
+    }
+
+    private void Update()
+    {
+        onPreUpdate();
+        onUpdate();
+    }
+    #endregion
+
     #region Global Combat Methods
     public void startBattle(GameObject initiator, cCharacter[] enemies, cCharacter[] party, int battleField)
     {
+        if (!m_BattleMario)
+        {
+            m_BattleMario = GetComponentInChildren<battleMario>();
+        }
         m_battleInitiator = initiator;
         m_arrEnemies = enemies;
         m_arrPlayerChars = party;
@@ -29,6 +50,7 @@ public class gBattleMode : MonoBehaviour
         //TODO: battle music
         setUpTurns();
         sortTurns();
+        m_battleActive = true;
     }
 
     public void endBattleVictory()
@@ -38,11 +60,13 @@ public class gBattleMode : MonoBehaviour
         m_WorldMode.gameObject.SetActive(true);
         m_BattleMode.gameObject.SetActive(false);
         Destroy(m_battleInitiator);
+        m_battleActive = false;
     }
 
     public void endBattleDefeat()
     {
         //TODO: Display Game Over as an atk name
+        m_battleActive = false;
         SceneManager.LoadScene("MAINMENU");
     }
 
@@ -71,25 +95,46 @@ public class gBattleMode : MonoBehaviour
         return m_arrPlayerChars[0];
     }
 
-    public static int Attack(cCharacter _char, cCharacter _target, float timingMod)
+    public cCharacter getEnemy(int index)
     {
-        return (int)Mathf.Max(1, (_char.getATK() - _target.getDEF()) * timingMod);
-    }
-    #endregion
-
-    #region Start and Update
-    private void Start()
-    {
-        //m_arrInitiativeOrder = GetComponentsInChildren<cCharacter>();
-        //combatButtons = gameObject.AddComponent<battlebuttons>();
-        m_currTurn = 0;
-        m_srBG = Camera.main.GetComponentInChildren<SpriteRenderer>();
+        return m_arrEnemies[index];
     }
 
-    private void Update()
+    public int getEnemiesSize()
     {
-        onPreUpdate();
-        onUpdate();
+        return m_arrEnemies.Length;
+    }
+
+    public int Attack(cCharacter _char, cCharacter _target, float timingMod)
+    {
+        int dmg = (int)Mathf.Max(1, (_char.getATK() - _target.getDEF()) * timingMod);
+        _target.m_Stats.m_currHP -= dmg;
+        if(_target.m_Stats.m_currHP <= 0)
+        {
+            if(_target is battleMario)
+            {
+                endBattleDefeat();
+            }
+            else
+            {
+                destroyEnemy(_target.m_enemyId);
+            }
+        }
+        return dmg;
+    }
+
+    public Player getPlayer()
+    {
+        return GetComponentInChildren<Player>();
+    }
+
+    public battleMario getMario()
+    {
+        if (!m_BattleMario)
+        {
+            return GetComponentInChildren<battleMario>();
+        }
+        return m_BattleMario;
     }
     #endregion
 
@@ -159,6 +204,10 @@ public class gBattleMode : MonoBehaviour
             if (takeTurn(m_currTurn))
             {
                 ++m_currTurn;
+                if(m_currTurn > m_arrInitiativeOrder.Length)
+                {
+                    m_currTurn = 0;
+                }
             }
         }
         else if (m_victory && !m_battleActive)
@@ -204,9 +253,15 @@ public class gBattleMode : MonoBehaviour
     {
         m_arrInitiativeOrder = m_arrPlayerChars.Concat(m_arrEnemies).ToArray();
     }
-    #endregion
 
-    //TODO: make mario attack
+    void setEnemyId()
+    {
+        for(int i = 0; i < m_arrEnemies.Length; ++i)
+        {
+            m_arrEnemies[i].m_enemyId = i;
+        }
+    }
+    #endregion
 
     GameObject m_battleInitiator;
 
@@ -225,12 +280,14 @@ public class gBattleMode : MonoBehaviour
     public GameObject[] m_QuadEnemies;
 
 
-    //[SerializeField]
-    //public battlebuttons combatButtons;
+    [SerializeField]
     public cCharacter[] m_arrInitiativeOrder;
+    [SerializeField]
     public cCharacter[] m_arrPlayerChars;
+    [SerializeField]
     public cCharacter[] m_arrEnemies;
 
+    battleMario m_BattleMario;
     [SerializeField]
     public SpriteRenderer m_srBG;
     cCharacter m_swapAux;

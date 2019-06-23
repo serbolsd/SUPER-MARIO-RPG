@@ -8,7 +8,7 @@ public class battleTerrapin : cCharacter
     void Start()
     {
         m_name = "TERRAPIN";
-        m_Stats = new cStats();
+        m_Stats = gameObject.AddComponent<cStats>();
         m_Stats.m_HP = 10;
         m_Stats.m_DEF = 8;
         m_Stats.m_ATK = 1;
@@ -18,8 +18,9 @@ public class battleTerrapin : cCharacter
         m_Stats.m_expReward = 0;
         m_Stats.m_coinReward = 0;
 
+        BM = GetComponentInParent<gBattleMode>();
         m_SR = gameObject.AddComponent<SpriteRenderer>();
-        m_SR.sprite = Resources.Load<Sprite>("Assets/Sprites/Enemies/Terrapin");
+        //m_SR.sprite = Resources.Load<Sprite>("Sprites/Enemies/Terrapin");
     }
 
     // Update is called once per frame
@@ -37,10 +38,11 @@ public class battleTerrapin : cCharacter
         else
         {
             cCharacter target = GetComponentInParent<gBattleMode>().getRandTargetPlayer();
-            gBattleMode.Attack(this, target, 1);
+            BM.Attack(this, target, 1);
         }
         return true;
     }
 
+    gBattleMode BM;
     public SpriteRenderer m_SR;
 }

@@ -16,6 +16,7 @@ public class iaTerrapin : MonoBehaviour
         m_Timer = m_lookAroundTime;
         m_lookingAround = false;
         m_ignoreLookAround = false;
+        m_bTrrpn = gameObject.AddComponent<battleTerrapin>();
     }
 
     // Update is called once per frame
@@ -184,10 +185,13 @@ public class iaTerrapin : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GetComponentInParent<gBattleMode>().startBattle(gameObject,
-                                                        gUtilities.makeCharCopies(new battleTerrapin(), Random.Range(1, 4)),
-                                                        gUtilities.makeCharCopies(new battleMario()), 
-                                                        m_BattleBG_Id);
+        if(collision.gameObject.tag == "Player")
+        {
+            GetComponentInParent<gBattleMode>().startBattle(gameObject,
+                                                            gUtilities.makeCharCopies(Instantiate<battleTerrapin>(m_bTrrpn), Random.Range(1, 4), transform.parent),
+                                                            gUtilities.makeCharArr(GetComponentInParent<gBattleMode>().getMario()),
+                                                            m_BattleBG_Id);
+        }
     }
 
     public Transform p0;
@@ -223,6 +227,7 @@ public class iaTerrapin : MonoBehaviour
     [SerializeField]
     public int m_BattleBG_Id;
 
+    battleTerrapin m_bTrrpn;
     Transform m_targetMario;
     Transform m_target;
     Vector3 m_dir;

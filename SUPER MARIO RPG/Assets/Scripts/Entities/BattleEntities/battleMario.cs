@@ -7,8 +7,9 @@ public class battleMario : cCharacter
     // Start is called before the first frame update
     void Start()
     {
-        m_Stats = FindObjectOfType<Player>().getStats();
+        m_Stats = GetComponentInParent<cStats>();
         m_name = "MARIO";
+        combatButtons = gameObject.AddComponent<battlebuttons>();
     }
 
     // Update is called once per frame
@@ -19,9 +20,11 @@ public class battleMario : cCharacter
 
     public override bool takeTurn()
     {
-        return base.takeTurn();
+        return combatButtons.onUpdate();
     }
 
     [SerializeField]
     public battlebuttons combatButtons;
+
+    //public static battleMario sBattleMario;
 }
