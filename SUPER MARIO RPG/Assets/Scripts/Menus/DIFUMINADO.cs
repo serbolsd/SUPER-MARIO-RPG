@@ -9,6 +9,7 @@ public class DIFUMINADO : MonoBehaviour
     public bool readyToChange = false;
     public bool changeSecne = false;
     public bool sceneIsVisible = false;
+    public float speed = 0.006f;
     //bool scenaVisible;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class DIFUMINADO : MonoBehaviour
         //Color color;
         if(BLACK.color.a > 0)
         {
-            colore.a -= 0.006f;
+            colore.a -= speed;
             BLACK.color = colore;
         }
         else
@@ -44,7 +45,7 @@ public class DIFUMINADO : MonoBehaviour
     {
         if(BLACK.color.a < 1)
         {
-            colore.a += 0.006f;
+            colore.a += speed;
             BLACK.color = colore;
         }
         else

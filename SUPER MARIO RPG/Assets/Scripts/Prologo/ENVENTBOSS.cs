@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ENVENTBOSS : MonoBehaviour
 {
+    public DIFUMINADO dif;
     public Sprite[] mario_sprite;
     public Sprite[] mario_sprite2;
     public CameraFollow cameraEvent;
@@ -40,6 +41,11 @@ public class ENVENTBOSS : MonoBehaviour
     Vector3[] marioJumpPos2 = new Vector3[2] { new Vector3(3.5f, 4.77f, 0.0f), new Vector3(2.75f, 3.77f, 0.0f)};
     Vector3[] finalPosCandelabro2 = new Vector3[5] { new Vector3(0f, 3.390237f, 0f), new Vector3(0f, 5.09f, 0f), new Vector3(0f, 5.57f, 0f), new Vector3(0f, 4.66f, 0f), new Vector3(0f, 6.37f, 0f) };
     Vector3 finalcameraPos2 = new Vector3(0.0f, 4.38f, -10.0f);
+    Vector3 originalbowserPos = new Vector3(4.842f, 3.648f,0.0f);
+    Vector3 finalbowserPos = new Vector3(4.842f, 4.524f, 0.0f);
+    Vector3 finalbowserPos2 = new Vector3(4.842f, 5.123f, 0.0f);
+    public GameObject bowser;
+    public Sprite bowserSorprendido;
 
     public float timeTans = 0.0f;
     // Start is called before the first frame update
@@ -79,10 +85,7 @@ public class ENVENTBOSS : MonoBehaviour
         timeTans += Time.deltaTime;
         if(timeTans>0.5f&&!start)
         {
-            for (int i = 0; i < candeledes.Length; i++)
-            {
-                candeledes[i].GetComponent<SpriteRenderer>().sortingOrder = 1;
-            }
+            
             timeTans = 0;
             start = true;
         }
@@ -122,6 +125,8 @@ public class ENVENTBOSS : MonoBehaviour
             marioScene();
             return;
         }
+        dif.changeSecne = true;
+        dif.obscurecer();
     }
     void marioSearch()
     {
@@ -299,6 +304,8 @@ public class ENVENTBOSS : MonoBehaviour
             Vector3 canPos = new Vector3(originalPosCandelabro[i].x, finalPosCandelabro[i].y, 0.0f) - originalPosCandelabro[i];
             candeledes[i].transform.position= originalPosCandelabro[i]+ (canPos * timeTans) / (1);
         }
+        Vector3 bowPos = finalbowserPos- originalbowserPos;
+        bowser.transform.position = originalbowserPos + (bowPos * timeTans) / (1); ;
 
         if (transCamera.position == new Vector3(originalCameraPos.x, finalPosCamara.y, -10.0f))
         {
@@ -371,6 +378,9 @@ public class ENVENTBOSS : MonoBehaviour
             Vector3 canPos = new Vector3(originalPosCandelabro[i].x, finalPosCandelabro2[i].y, 0.0f) - originalPosCandelabro[i];
             candeledes[i].transform.position = originalPosCandelabro[i] + (canPos * timeTans) / (endtime);
         }
+        Vector3 bowPos = finalbowserPos2 - finalbowserPos;
+        bowser.transform.position = finalbowserPos + (bowPos * timeTans) / (1); ;
+
 
         if (transCamera.position == new Vector3(originalCameraPos.x, finalcameraPos2.y, -10.0f))
         {
@@ -433,6 +443,11 @@ public class ENVENTBOSS : MonoBehaviour
                 //Debug.Log("centro");
                 renderMarioExtra.sprite = mario_sprite2[13];
                 renderMarioExtra.flipX = false;
+                bowser.GetComponent<Animator>().enabled = false;
+                bowser.GetComponent<Animator>().SetBool("sorpresa", true);
+                bowser.GetComponent<Animator>().SetBool("emputado", true);
+                bowser.GetComponent<SpriteRenderer>().sprite = bowserSorprendido;
+
                 return;
             }
             if (timeTans < 1.2)
@@ -446,6 +461,11 @@ public class ENVENTBOSS : MonoBehaviour
             {
                 //Debug.Log("centro");
                 renderMarioExtra.sprite = mario_sprite2[1];
+                bowser.GetComponent<Animator>().enabled = true;
+                
+                
+//                bowser.GetComponent<Animator>().animat = true;
+
                 return;
             }
             if (timeTans < 2.2)
@@ -566,7 +586,7 @@ public class ENVENTBOSS : MonoBehaviour
             {
                 numPutasos++;
             }
-            else
+            else if(numPutasos>=2)
             {
                 finishMarioScene = true;
             }

@@ -20,6 +20,8 @@ TextureImporter:
     21300030: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_15
     21300032: bowser risa1
     21300034: bowser risa2
+    21300036: emputado1
+    21300038: emputado2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -490,6 +492,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 31cc0b857e9633149b31b75acd3bfc4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emputado1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 713
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1627577d53877b04fa872afcfb304e89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emputado2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 713
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1694db9869c31447909de123c05b213
       vertices: []
       indices: 
       edges: []
