@@ -8,7 +8,7 @@ public class MarioSelect : MonoBehaviour
 {
     Vector3[] pos= { new Vector3(-0.484f, 0.796f,0), new Vector3(-0.913f, 0.418f, 0), new Vector3(-0.913f, 0.018f, 0), new Vector3(-0.913f, -0.381f, 0), new Vector3(-0.913f, -0.781f, 0) };
     // Start is called before the first frame update
-    int indexPos = 0;
+    public int indexPos = 0;
     bool jostick_vertival = false;
     float escale=.2f;
     public GameObject marco;
@@ -28,6 +28,8 @@ public class MarioSelect : MonoBehaviour
     public int mips ;
     bool cantCharge = false;
     public int maxmip;
+    public bool canPlay;
+    public AudioClip[] clips;
     void Start()
     {
         //mips = this.GetComponent<SpriteRenderer>().sprite.texture.mipmapCount;
@@ -40,7 +42,6 @@ public class MarioSelect : MonoBehaviour
         marco.GetComponent<SpriteRenderer>().sprite.texture.mipMapBias = 1;
 
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -73,19 +74,24 @@ public class MarioSelect : MonoBehaviour
         }
         if (jostick_vertival)
         {
-            if(!InputManager.jostickMoveVertical()&&!InputManager.DOWNButton()&&!InputManager.UPButton())
+            if (!InputManager.jostickMoveVertical() && !InputManager.DOWNButton() && !InputManager.UPButton())
             {
                 jostick_vertival = false;
+                canPlay = true;
             }
             else
             {
-                return;        
+                canPlay = false;
+                return;  
+                
             }
         }
         if ((Input.GetKeyDown(KeyCode.S )&& indexPos < 4)||(InputManager.jostickMoveVertical() && indexPos < 4) || (InputManager.DOWNButton() && indexPos < 4))
         {
             if (InputManager.Joystick().y <= 0 || InputManager.DOWNButton())
             {
+                this.GetComponent<AudioSource>().clip = clips[1];
+                this.GetComponent<AudioSource>().Play();
                 jostick_vertival = true;
                indexPos++;
                this.transform.position = pos[indexPos];
@@ -100,6 +106,8 @@ public class MarioSelect : MonoBehaviour
         {
             if (InputManager.Joystick().y >= 0|| InputManager.UPButton())
             {
+                this.GetComponent<AudioSource>().clip = clips[1];
+                this.GetComponent<AudioSource>().Play();
                 jostick_vertival = true;
                 indexPos--;
                 this.transform.position = pos[indexPos];
@@ -116,7 +124,6 @@ public class MarioSelect : MonoBehaviour
             select();
         }
     }
-
     void select()
     {
         
@@ -173,12 +180,10 @@ public class MarioSelect : MonoBehaviour
                 break;
         }
     }
-
     bool loadArchive()
     {
         return false;
     }
-
     void erroMips()
     {
         timeTrans += Time.deltaTime;
@@ -261,7 +266,6 @@ public class MarioSelect : MonoBehaviour
             this.GetComponent<SpriteRenderer>().sprite = marioMenu[0];
         }
     }
-
     void saltoInverso()
     {
         if(arrive)
@@ -286,7 +290,6 @@ public class MarioSelect : MonoBehaviour
         }
         SceneManager.LoadScene("SETNAMEMENU");
     }
-
     void arriveInverso()
     {
         timeTrans += Time.deltaTime;

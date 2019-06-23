@@ -28,6 +28,11 @@ public class NAME : MonoBehaviour
     public Sprite[] sprite7 = new Sprite[11];
 
     public SpriteRenderer flecha;
+    /////////////////Lulu=puta, perla=Buen pedo(Morra de su vida). Daniela=ex ;(
+    public AudioClip MonoEffect;
+    public AudioSource Reproducir;
+    public AudioClip[] clips = new AudioClip[4];
+    /// ////////////
 
     int maxletter = 8;
     public int letterIndex=0;
@@ -42,6 +47,9 @@ public class NAME : MonoBehaviour
     public bool isDone = false;
     void Start()
     {
+        /////////////////////////////
+        
+        /////////////////////////////
         marco.sprite.texture.mipMapBias = 0;
         initletters();
         initPosLetters();
@@ -226,7 +234,6 @@ public class NAME : MonoBehaviour
         //flecha.transform.position = new Vector3(objetivePos[letterIndex].x, flecha.transform.position.y, 0);
 
     }
-
     void selectLetter(int fil, int col)
     {
         letterextra.sprite = letter[letterIndex].sprite;
@@ -236,6 +243,8 @@ public class NAME : MonoBehaviour
         letter[letterIndex].sprite = sprites[fil][col];
         objetiveIndex = letterIndex;
         bLetterMove = true;
+        Reproducir.clip = clips[0];
+        Reproducir.Play();
     }
     public void moveLetter()
     {
@@ -292,6 +301,8 @@ public class NAME : MonoBehaviour
         letterextra.sprite = letter[letterIndex].sprite;
         letterextra.transform.position = letter[letterIndex].transform.position;
         flecha.transform.position = new Vector3(objetivePos[letterIndex].x, flecha.transform.position.y, 0);
+        Reproducir.clip = clips[1];
+        Reproducir.Play();
     }
     void previous()
     {
@@ -300,6 +311,8 @@ public class NAME : MonoBehaviour
         letterextra.sprite = letter[letterIndex].sprite;
         letterextra.transform.position = letter[letterIndex].transform.position;
         flecha.transform.position = new Vector3(objetivePos[letterIndex].x, flecha.transform.position.y, 0);
+        Reproducir.clip = clips[2];
+        Reproducir.Play();
     }
     void done()
     {
@@ -311,6 +324,8 @@ public class NAME : MonoBehaviour
         isDone = true;
         //SceneManager.LoadScene("PROLOGO");
         //PROLOGO
+        Reproducir.clip=clips[3];
+        Reproducir.Play();
     }
     public void pixelear()
     {

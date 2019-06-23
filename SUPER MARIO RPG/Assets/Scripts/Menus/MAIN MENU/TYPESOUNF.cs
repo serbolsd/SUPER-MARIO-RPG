@@ -11,7 +11,7 @@ public class TYPESOUNF : MonoBehaviour
     public SpriteRenderer MONO;
     public Sprite[] spriteStereo;
     public Sprite[] spriteMono;
-    bool selectbutton = false;
+   public  bool selectbutton = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,17 +24,17 @@ public class TYPESOUNF : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Q)||InputManager.LBButton()||(InputManager.BackButton() && !selectbutton))
+        if (Input.GetKey(KeyCode.Q)||InputManager.LBButton()||(InputManager.BackButton() && selectbutton))
         {
-            selectbutton = true;
+            selectbutton = false;
             STEREO.sprite = spriteStereo[0];
             STEREO.transform.position = new Vector3(STEREO.transform.position.x,posActive,0);
             MONO.sprite = spriteMono[0];
             MONO.transform.position = new Vector3(MONO.transform.position.x, posInActive, 0);
         }
-        else if (Input.GetKey(KeyCode.E)||InputManager.RBButton() || (InputManager.BackButton() && selectbutton))
+        else if (Input.GetKey(KeyCode.E)||InputManager.RBButton() || (InputManager.BackButton() && !selectbutton))
         {
-            selectbutton = false;
+            selectbutton = true;
             STEREO.sprite = spriteStereo[1];
             STEREO.transform.position = new Vector3(STEREO.transform.position.x, posInActive, 0);
             MONO.sprite = spriteMono[1];

@@ -8,9 +8,9 @@ public class HANDSELECT : MonoBehaviour
     // Start is called before the first frame update
     Vector2[][] pos;
     public NAME selection;
-    int fila=0;
+   public int fila=0;
     int max_fila=6;
-    int columna=0;
+   public int columna=0;
     int max_columna=10;
     bool jostick_vertival = false;
     bool jostick_horizontal = false;
