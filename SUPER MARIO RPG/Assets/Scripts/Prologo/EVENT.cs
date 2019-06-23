@@ -5,6 +5,7 @@ using UnityEngine;
 public class EVENT : MonoBehaviour
 {
     public Transform transMario;
+    public SpriteRenderer mario;
     public PuenteVrgs[] puenter=new PuenteVrgs[6];
     public BoxCollider2D newWall;
     public Transform transCamera;
@@ -14,6 +15,7 @@ public class EVENT : MonoBehaviour
     bool downCamera = true;
     Vector3 initPosCamera;
     public Player statemachine;
+    public SpriteRenderer marioExptra;
 
     // Start is called before the first frame update
     void Start()
@@ -35,9 +37,12 @@ public class EVENT : MonoBehaviour
             statemachine.isCutScene = true;
             initEvent = true;
         }
-        if(initEvent)
+        if (initEvent)
         {
-            if(downCamera&&timeTans>-.05)
+            mario.enabled = false;
+            marioExptra.enabled = true;
+            marioExptra.transform.position = transMario.position;
+            if (downCamera&&timeTans>-.05)
             {
                 timeTans -= Time.deltaTime;
             }
@@ -64,6 +69,8 @@ public class EVENT : MonoBehaviour
             statemachine.isCutScene = false;
             finishEvent = true;
             newWall.enabled = true;
+            mario.enabled = true;
+            marioExptra.enabled = false;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

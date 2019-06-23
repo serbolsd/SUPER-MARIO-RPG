@@ -21,6 +21,7 @@ TextureImporter:
     21300032: jumpi
     21300034: aterrisaje1
     21300036: aterrisaje2
+    21300038: sorpresa1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -451,7 +452,7 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -471,13 +472,33 @@ TextureImporter:
         width: 22
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7f9fea97e8c229244b0422d46b98581c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sorpresa1
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 245
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af64b663eb0fa1e4991983d6a378f088
       vertices: []
       indices: 
       edges: []

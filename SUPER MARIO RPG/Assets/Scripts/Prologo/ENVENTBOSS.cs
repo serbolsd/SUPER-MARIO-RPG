@@ -48,6 +48,9 @@ public class ENVENTBOSS : MonoBehaviour
     public Sprite bowserSorprendido;
 
     public float timeTans = 0.0f;
+    public AudioSource repro;
+    public AudioClip jumpson;
+    public bool jumpiarSound = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -318,6 +321,13 @@ public class ENVENTBOSS : MonoBehaviour
     void jump1()
     {
         renderMarioExtra.sprite = mario_sprite[12];
+        if(!jumpiarSound)
+        {
+            repro.clip = jumpson;
+            repro.Play();
+            jumpiarSound = true;
+
+        }
         float endTime = 0.5f;
         if (!up)
         {
@@ -347,6 +357,7 @@ public class ENVENTBOSS : MonoBehaviour
             {
                 numSaltos++;
                 timeTans = 0;
+                jumpiarSound = false;
                 up = false;
             }
         }
@@ -393,6 +404,12 @@ public class ENVENTBOSS : MonoBehaviour
     void jump2()
     {
         renderMarioExtra.sprite = mario_sprite[13];
+        if (!jumpiarSound)
+        {
+            repro.clip = jumpson;
+            repro.Play();
+            jumpiarSound = true;
+        }
         if (!finishjump2_1)
         {
             float endTime = 1.0f;

@@ -5,6 +5,7 @@ using UnityEngine;
 public class DOOR : MonoBehaviour
 {
     // Start is called before the first frame update
+    bool isOpen = false;
     void Start()
     {
         
@@ -18,5 +19,7 @@ public class DOOR : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         this.GetComponent<SpriteRenderer>().enabled = true;
+        if(!isOpen)
+            this.GetComponent<AudioSource>().Play();
     }
 }

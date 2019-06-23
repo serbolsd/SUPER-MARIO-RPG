@@ -27,6 +27,7 @@ public class FireBall : MonoBehaviour
         if (timeTrans > speedRespawn && !isRespawn)
         {
             timeTrans = 0;
+            this.GetComponent<AudioSource>().Play();
             isRespawn = true;
         }
         else if (!isRespawn)
