@@ -1985,12 +1985,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1484111031}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1140958756 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7470602921632059339, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
-    type: 3}
-  m_PrefabInstance: {fileID: 7470602922772818415}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1142734975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2886,6 +2880,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1867985362}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1591577380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6743932380542367123, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_Name
+      value: Mario Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.505
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.473
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6743932380542367148, guid: 6bcc75512cc5471418ba4f6230867057,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bcc75512cc5471418ba4f6230867057, type: 3}
 --- !u!1001 &1638818082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3549,7 +3617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1904910611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.7, y: 0.03, z: -10}
+  m_LocalPosition: {x: -0.7, y: -0.29, z: -10}
   m_LocalScale: {x: -0.15691115, y: 0.8933718, z: 0.27390072}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3579,7 +3647,9 @@ MonoBehaviour:
   - {fileID: 1536923962}
   - {fileID: 1897840818}
   - {fileID: 1995506209}
-  m_Mario: {fileID: 1140958756}
+  candelabros: []
+  isCutScene: 0
+  m_Mario: {fileID: 2045976909}
   m_range: 0.1
 --- !u!114 &1904910616
 MonoBehaviour:
@@ -3743,6 +3813,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &2045976909 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6743932380542367144, guid: 6bcc75512cc5471418ba4f6230867057,
+    type: 3}
+  m_PrefabInstance: {fileID: 1591577380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2085680334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3374225440981011233, guid: 5a01cedaaa659c94f85af5d94fd99e31,
@@ -3835,6 +3911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mario
+      objectReference: {fileID: 0}
+    - target: {fileID: 7470602921632059376, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7470602921632059339, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}

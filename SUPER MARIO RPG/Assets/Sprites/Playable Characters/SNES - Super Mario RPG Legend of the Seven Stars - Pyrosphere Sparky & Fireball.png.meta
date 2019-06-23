@@ -2,8 +2,7 @@ fileFormatVersion: 2
 guid: 273b53b91688fe24bb828b4379606a85
 TextureImporter:
   fileIDToRecycleName:
-    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky
-      & Fireball_0
+    21300000: 1
     21300002: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky
       & Fireball_1
     21300004: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky
@@ -14,8 +13,7 @@ TextureImporter:
       & Fireball_4
     21300010: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky
       & Fireball_5
-    21300012: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky
-      & Fireball_6
+    21300012: 2
     21300014: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky
       & Fireball_7
     21300016: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky
@@ -106,8 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky &
-        Fireball_0
+      name: 1
       rect:
         serializedVersion: 2
         x: 42
@@ -115,7 +112,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -136,7 +133,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +154,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +175,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +196,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +217,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,8 +229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Pyrosphere Sparky &
-        Fireball_6
+      name: 2
       rect:
         serializedVersion: 2
         x: 35
@@ -241,7 +237,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +258,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +279,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,7 +300,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +321,7 @@ TextureImporter:
         width: 24
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

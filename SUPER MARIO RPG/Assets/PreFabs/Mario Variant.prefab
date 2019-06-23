@@ -29,7 +29,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.18}
@@ -103,7 +103,7 @@ PrefabInstance:
     - target: {fileID: 7470602921632059376, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
       propertyPath: m_Name
-      value: Mario
+      value: Mario Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7470602921632059339, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
@@ -163,17 +163,17 @@ PrefabInstance:
     - target: {fileID: 7470602921632059339, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.48667294
       objectReference: {fileID: 0}
     - target: {fileID: 7470602921632059339, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.48667294
       objectReference: {fileID: 0}
     - target: {fileID: 7470602921632059339, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.48667294
       objectReference: {fileID: 0}
     - target: {fileID: 7470602921856904550, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
@@ -228,12 +228,12 @@ PrefabInstance:
     - target: {fileID: 7470602921632059343, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7470602921632059343, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.12
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7470602921632059343, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
         type: 3}
@@ -251,6 +251,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 91a94145c37e6974bb927b64f41ad7f4,
         type: 3}
+    - target: {fileID: 7470602921632059341, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
+        type: 3}
+      propertyPath: m_gravForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7470602921632059341, guid: 44ba6f1ab36a03b48a27a6b0180893e4,
+        type: 3}
+      propertyPath: m_jumpForce
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44ba6f1ab36a03b48a27a6b0180893e4, type: 3}
 --- !u!1 &6743932380542367123 stripped
