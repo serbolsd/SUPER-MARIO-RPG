@@ -8,9 +8,17 @@ TextureImporter:
     21300006: SNES - Super Mario RPG Legend of the Seven Stars - Mario_3
     21300008: SNES - Super Mario RPG Legend of the Seven Stars - Mario_4
     21300010: SNES - Super Mario RPG Legend of the Seven Stars - Mario_5
-    21300012: SNES - Super Mario RPG Legend of the Seven Stars - Mario_6
-    21300014: SNES - Super Mario RPG Legend of the Seven Stars - Mario_7
+    21300012: golpecito8
+    21300014: golpecito9
     21300016: SNES - Super Mario RPG Legend of the Seven Stars - Mario_8
+    21300018: golpecito1
+    21300020: golpecito2
+    21300022: golpecito3
+    21300024: golpecito4
+    21300026: golpecito5
+    21300028: golpecito6
+    21300030: golpecito7
+    21300032: SNES - Super Mario RPG Legend of the Seven Stars - Mario_9
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -213,7 +221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_6
+      name: golpecito8
       rect:
         serializedVersion: 2
         x: 470
@@ -233,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_7
+      name: golpecito9
       rect:
         serializedVersion: 2
         x: 515
@@ -261,13 +269,173 @@ TextureImporter:
         width: 33
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 9daaa1074bda577418f482e28aad0bf4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golpecito1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 643
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649e2066a7bea194ba9ba1708cc193b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golpecito2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 643
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1398fe9b5801b3241b4de001ad8af525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golpecito3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 643
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c5ba262bc91d646b1d5262bf5616d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golpecito4
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 643
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8cff1d5a0f7f83409fb02ade8d58f31
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golpecito5
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 643
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042d68a9c30e4224e994ca91aa654f0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golpecito6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 643
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e29001410904be438810787db4eb4c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: golpecito7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 682
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 220e072e087ecf3449536e1f57d508d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 683
+        width: 27
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9f81abced36484ab187b49bef0cd46
       vertices: []
       indices: 
       edges: []

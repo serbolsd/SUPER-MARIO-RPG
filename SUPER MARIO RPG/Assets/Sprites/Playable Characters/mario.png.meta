@@ -17,6 +17,10 @@ TextureImporter:
     21300024: arriba1
     21300026: arriba2
     21300028: sorpresa
+    21300030: salto
+    21300032: jumpi
+    21300034: aterrisaje1
+    21300036: aterrisaje2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -387,13 +391,93 @@ TextureImporter:
         width: 24
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 4349e666156685a4baa925d40b496b58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salto
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 417
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcddcc381b3b11447bf38b7af5f1d036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpi
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 649
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9a5495c9a9da84295a77ec1e1c8760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aterrisaje1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 243
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795f36e6b58296b42846121dd6de483a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aterrisaje2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 418
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9fea97e8c229244b0422d46b98581c
       vertices: []
       indices: 
       edges: []
