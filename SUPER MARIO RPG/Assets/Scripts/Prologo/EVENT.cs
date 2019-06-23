@@ -5,9 +5,9 @@ using UnityEngine;
 public class EVENT : MonoBehaviour
 {
     public Transform transMario;
-    public Transform transCamera;
     public PuenteVrgs[] puenter=new PuenteVrgs[6];
     public BoxCollider2D newWall;
+    public Transform transCamera;
     public bool initEvent = false;
     public bool finishEvent = false;
     float timeTans=0.0f;

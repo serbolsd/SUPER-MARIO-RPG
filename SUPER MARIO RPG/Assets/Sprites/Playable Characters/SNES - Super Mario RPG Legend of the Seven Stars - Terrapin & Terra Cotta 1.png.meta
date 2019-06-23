@@ -1,0 +1,375 @@
+fileFormatVersion: 2
+guid: f2f4093a1250bb443bb0df7151b0eaf3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_0
+    21300002: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_1
+    21300004: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_2
+    21300006: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_3
+    21300008: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_4
+    21300010: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_5
+    21300012: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_6
+    21300014: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_7
+    21300016: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_8
+    21300018: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_9
+    21300020: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_10
+    21300022: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra
+      Cotta 1_11
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 645
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b340d26eeddad4d84279ccc2e77786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 645
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820213eb991552b4f999eff1319a33a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 643
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bc092559fc63047939d8c110b1bba9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 606
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780bfdb86d42bfc49b9e4eba91f63d98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 606
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6055a5caa38cb4241bb9bd0da486cf9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_5
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 606
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4d443758d497d40b9ab802d2e34b36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_6
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 645
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a9c8e2d528e7c4f9c47f514f694b5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_7
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 645
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478888a5d3d246146910c0c25d24e03d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_8
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 645
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e97e9d54780304989270f814cd620b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_9
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 606
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b65c92562694f04887892a687dab7f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_10
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 606
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067a0610d18bf5d4382b35b9dc4b868d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Terrapin & Terra Cotta
+        1_11
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 606
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e773ce2e2c9f7543912be79c313f367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8f5f38a12f9df144aa9e4e25a842d9e0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

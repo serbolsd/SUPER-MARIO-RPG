@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: 91a94145c37e6974bb927b64f41ad7f4
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SNES - Super Mario RPG Legend of the Seven Stars - Mario_0
+    21300002: mario volteando
+    21300004: SNES - Super Mario RPG Legend of the Seven Stars - Mario_1
+    21300006: SNES - Super Mario RPG Legend of the Seven Stars - Mario_2
+    21300008: SNES - Super Mario RPG Legend of the Seven Stars - Mario_3
+    21300010: SNES - Super Mario RPG Legend of the Seven Stars - Mario_4
+    21300012: SNES - Super Mario RPG Legend of the Seven Stars - Mario_5
+    21300014: SNES - Super Mario RPG Legend of the Seven Stars - Mario_6
+    21300016: SNES - Super Mario RPG Legend of the Seven Stars - Mario_7
+    21300018: frente
+    21300020: diago
+    21300022: SNES - Super Mario RPG Legend of the Seven Stars - Mario_8
+    21300024: arriba1
+    21300026: arriba2
+    21300028: sorpresa
+    21300030: salto
+    21300032: jumpi
+    21300034: aterrisaje1
+    21300036: aterrisaje2
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_0
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 375
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c399f6cf48326a648a3372fce86d4c78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mario volteando
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 380
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00253d8ccec913c4a94c0e22d56ccd22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_1
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 380
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8048c707774eb49a923dfe5d4d558f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_2
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 380
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ddef4c3aae9a8419273d7a30ce2480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 63
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fbf641f93ec4f74c82d04374dd3eb20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 63
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdb1292e8dda6744b8a90cc8afb7470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_5
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 343
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98f5d25a6b367e408e33fc3939aa585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_6
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 343
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c13110c3e0f8c419577e6dfcecdee1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_7
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 343
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be8a297217652e48b0f26cf11dac1c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frente
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 606
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58ae4c12b5ad7a4a8d388ad5dc3108c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: diago
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 645
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567208c462f460248b0cd1760948578e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Mario_8
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 416
+        width: 2
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d200d953aa822c149983101d194320f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arriba1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 136
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d14a4f33f67b5e41adfc7cd42a1e469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: arriba2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 136
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4544ed3638a6e244182aa355c595bc8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sorpresa
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 245
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4349e666156685a4baa925d40b496b58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: salto
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 417
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcddcc381b3b11447bf38b7af5f1d036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jumpi
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 649
+        width: 21
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9a5495c9a9da84295a77ec1e1c8760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aterrisaje1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 243
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 795f36e6b58296b42846121dd6de483a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aterrisaje2
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 418
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9fea97e8c229244b0422d46b98581c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e931f875cdeedef499b8de4ab8d1baf0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

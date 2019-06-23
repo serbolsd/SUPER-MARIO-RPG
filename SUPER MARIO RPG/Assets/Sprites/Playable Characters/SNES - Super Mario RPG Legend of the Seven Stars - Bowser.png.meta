@@ -1,8 +1,23 @@
 fileFormatVersion: 2
-guid: e21882850e4cf5140aaf669e1846c11f
+guid: 0aa7c1579a04c6d4e988b562225cbf3a
 TextureImporter:
   fileIDToRecycleName:
     21300000: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_0
+    21300002: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_1
+    21300004: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_2
+    21300006: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_3
+    21300008: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_4
+    21300010: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_5
+    21300012: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_6
+    21300014: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_7
+    21300016: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_8
+    21300018: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_9
+    21300020: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_10
+    21300022: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_11
+    21300024: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_12
+    21300026: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_13
+    21300028: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_14
+    21300030: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_15
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -88,10 +103,310 @@ TextureImporter:
       name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 853
-        width: 39
-        height: 48
+        x: 2
+        y: 857
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05825fba151a3544496b392e80b61885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 857
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b2628335796534eb8fbeb7e2df8546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 858
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed56e27aa64cfc43962e03a393b972c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 540
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f11a766aae1c945b7067e031f8c512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_4
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 540
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b1b1cbff45f314da087e16bc56e551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_5
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 539
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9eaa12036d0754d8d2182c87079c80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_6
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 539
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61534f63f1df50f4397a7013c172b2e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 539
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65f0ab2afc3654438e225d489497f96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 539
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265bd6eadffefd7488a97b5a2db87ce1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 535
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9b71c0c94c1ff4984ca5d4f7fb5328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_10
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 532
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d363ab738b30b543862de2d4ee79d34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_11
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 529
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fa1810a1ab775468b78ce8c1c1dd88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 857
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c61bba05cd767d4ebff0b3ff3b1b551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_13
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 808
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424a92adaa8c52843a8281079ce344ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_14
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 796
+        width: 36
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538bbe436f90474479c666c29ad7bf6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Super Mario RPG Legend of the Seven Stars - Bowser_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 421
+        width: 36
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -99,7 +414,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff8e0a723c746494bb20ba9d484c404a
+      spriteID: f9f67ebc91c3fbf48b11f65fbc8175c9
       vertices: []
       indices: 
       edges: []
@@ -107,7 +422,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 597294dcfdc419741aa45c91c4d261b1
+    spriteID: 8abd803124cebd846b0b0850b7331bda
     vertices: []
     indices: 
     edges: []

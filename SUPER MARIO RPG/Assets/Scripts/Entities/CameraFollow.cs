@@ -5,12 +5,17 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public GameObject []objectsInScene;
+    public GameObject []candelabros;
+    public bool isCutScene = false;
     private void Start()
     {
         
     }
     private void Update()
     {
+        checklayout();
+        if (isCutScene)
+            return;
         m_pos = transform.position;
         m_pos.z = 0;
         m_dir = m_Mario.position - m_pos;
@@ -18,7 +23,7 @@ public class CameraFollow : MonoBehaviour
         {
             transform.position += (m_dir * m_dir.magnitude);
         }
-        checklayout();
+        //candels();
 
     }
     public ref Transform getMario()
@@ -49,6 +54,17 @@ public class CameraFollow : MonoBehaviour
                 //objectsInScene[i].GetComponent<SpriteRenderer>().renderingLayerMask = 1;
                 objectsInScene[i].GetComponentInChildren<SpriteRenderer>().sortingOrder = 1;
                 //objectsInScene[i].GetComponentInChildren<SpriteRenderer>().renderingLayerMask = 1;
+            }
+        }
+    }
+
+    void candels()
+    {
+        if (m_dir.magnitude > m_range)
+        {
+            for (int i = 0; i < candelabros.Length; i++)
+            {
+                candelabros[i].transform.position += new Vector3(m_dir.x * .13f, m_dir.y * .1f,0.0f);
             }
         }
     }
